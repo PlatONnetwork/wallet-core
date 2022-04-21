@@ -37,6 +37,7 @@ public:
             TWCoinTypeCronosChain,
             TWCoinTypeSmartBitcoinCash,
             TWCoinTypeKuCoinCommunityChain,
+            TWCoinTypeBoba,
             TWCoinTypePlaton
         };
     }
