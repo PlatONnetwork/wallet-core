@@ -102,5 +102,6 @@ class CoinAddressDerivationTests {
         OSMOSIS -> assertEquals("osmo142j9u5eaduzd7faumygud6ruhdwme98qclefqp", address)
         ECASH -> assertEquals("ecash:qpelrdn7a0hcucjlf9ascz3lkxv7r3rffgzn6x5377", address)
         PLATON -> assertEquals("0x4DA995fB21D93aA75aB67F55987fAbcB909A5c00", address)
+        ALAYA -> assertEquals("0x21f34547ed3b541cFaF3ceC30946ACeB7505EbF7", address)
     }
 }
