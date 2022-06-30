@@ -79,7 +79,7 @@ public final class KeyStore {
         return try saveCreatedWallet(for: key, password: password, coins: coins)
     }
 
-    private func saveCreatedWallet(for key: StoredKey, password: String, coins: [CoinType]) throws -> Wallet {
+    public func saveCreatedWallet(for key: StoredKey, password: String, coins: [CoinType]) throws -> Wallet {
         let url = makeAccountURL()
         let wallet = Wallet(keyURL: url, key: key)
         for coin in coins {
@@ -334,11 +334,11 @@ public final class KeyStore {
 
     // MARK: Helpers
 
-    private func makeAccountURL(for address: Address) -> URL {
+    public func makeAccountURL(for address: Address) -> URL {
         return keyDirectory.appendingPathComponent(generateFileName(identifier: address.description))
     }
 
-    private func makeAccountURL() -> URL {
+    public func makeAccountURL() -> URL {
         return keyDirectory.appendingPathComponent(generateFileName(identifier: UUID().uuidString))
     }
 
