@@ -135,6 +135,7 @@ public:
         case TWCoinTypeAurora:
         case TWCoinTypeEvmos:
         case TWCoinTypePlatON:
+        case TWCoinTypeAlaya:
         case TWBlockchainEthereum:
         case TWBlockchainVechain:
         case TWBlockchainTheta:

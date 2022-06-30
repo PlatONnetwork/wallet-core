@@ -244,6 +244,9 @@ class CoinAddressDerivationTests: XCTestCase {
                 case .platON:
                     let expectedResult = "0x4DA995fB21D93aA75aB67F55987fAbcB909A5c00"
                     assertCoinDerivation(coin, expectedResult, derivedAddress, address)
+                case .alaya:
+                    let expectedResult = "0x21f34547ed3b541cFaF3ceC30946ACeB7505EbF7"
+                    assertCoinDerivation(coin, expectedResult, derivedAddress, address)
                 @unknown default:
                     fatalError()
                 }
